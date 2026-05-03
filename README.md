@@ -1,2 +1,114 @@
-# Jetflow
-JetFlow is a lightweight, high-performance CSS utility engine for fast modern web development. It offers a simple, single-mode workflow with minimal setup, enabling rapid styling through a clean utility-first approach. Easy to use via CDN or locally.
+# JetFlow
+
+JetFlow is a browser-based styling engine that combines readable CSS-like syntax with utility-driven speed. It allows you to build modern interfaces without writing traditional CSS files while keeping the syntax intuitive.
+
+## Overview
+
+JetFlow is designed to bridge the gap between traditional CSS and utility-first systems. It provides a unified approach where you can use semantic classes, atomic utilities, and CSS-like values together in a single workflow.
+
+## Features
+
+- Semantic presets for reusable UI patterns
+- CSS-like arbitrary values using bracket syntax
+- Utility-based styling for rapid development
+- Clean and human-readable naming system
+- Responsive and state modifiers support
+- Runtime compilation with no build step required for usage
+- Single-file distribution for CDN usage
+
+## Installation
+
+Include the compiled file in your project:
+```html
+<script src="https://cdn.jsdelivr.net/gh/YOUR_USERNAME/YOUR_REPO@v1.0.0/dist/jetflow.min.js"></script>
+```
+
+## Basic Usage
+
+Use classes directly in your markup:
+```html
+<div class="p-4 bg-brand-mid text-white">
+  Hello World
+</div>
+```
+
+## CSS-like Values
+
+JetFlow supports direct value input using bracket syntax:
+```html
+<div class="p-[8px_16px] bg-[#1479c9] rounded-[12px]">
+  Custom styling
+</div>
+```
+
+## Semantic Presets
+
+Define reusable styles in your configuration:
+```css
+.btn {
+  padding: 8px 16px;
+  border-radius: 6px;
+}
+
+.btn-primary {
+  background: blue;
+  color: white;
+}
+```
+
+Use them in markup:
+
+```html
+<button class="btn-primary">
+  Button
+</button>
+```
+
+## Grouped Syntax
+
+Reduce class clutter using grouping:
+```html
+<div class="(p-4 bg-white rounded-lg shadow)">
+</div>
+```
+
+Supports modifiers:
+```html
+<div class="hover:(bg-blue-mid text-white)">
+</div>
+```
+
+## Configuration
+
+JetFlow uses a configuration file to define theme values, utilities, and presets.
+
+Example structure:
+
+``` javascript
+export default {
+  theme: {
+    colors: {
+      brand: {
+        light: "#d9efff",
+        mid: "#1479c9",
+        dark: "#0d4f83"
+      }
+    }
+  },
+  apply: {
+    ".btn": "px-4 py-2 rounded-md",
+    ".btn-primary": "bg-brand-mid text-white"
+  }
+};
+```
+
+## Goals
+
+- Reduce CSS complexity
+- Improve readability over traditional utility systems
+- Maintain full flexibility for advanced usage
+- Provide a fast and scalable styling workflow
+
+## Status
+
+Active development. Features and APIs may evolve.
