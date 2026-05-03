@@ -13,7 +13,7 @@ import importedConfig from "./jetflow.config.js";
   if (!global || !document) return;
 
   var STYLE_ID = "jetflow-runtime-style";
-  var VERSION = "0.3.0";
+  var VERSION = "0.1.0";
   var TRANSFORM_VALUE = "translate3d(var(--jf-translate-x,0),var(--jf-translate-y,0),0) rotate(var(--jf-rotate,0)) skewX(var(--jf-skew-x,0)) skewY(var(--jf-skew-y,0)) scaleX(var(--jf-scale-x,1)) scaleY(var(--jf-scale-y,1))";
   var FILTER_VALUE = "blur(var(--jf-blur,0)) brightness(var(--jf-brightness,1)) contrast(var(--jf-contrast,1)) grayscale(var(--jf-grayscale,0)) hue-rotate(var(--jf-hue-rotate,0deg)) invert(var(--jf-invert,0)) saturate(var(--jf-saturate,1)) sepia(var(--jf-sepia,0)) drop-shadow(var(--jf-drop-shadow,0 0 #0000))";
   var BACKDROP_FILTER_VALUE = "blur(var(--jf-backdrop-blur,0)) brightness(var(--jf-backdrop-brightness,1)) contrast(var(--jf-backdrop-contrast,1)) grayscale(var(--jf-backdrop-grayscale,0)) hue-rotate(var(--jf-backdrop-hue-rotate,0deg)) invert(var(--jf-backdrop-invert,0)) opacity(var(--jf-backdrop-opacity,1)) saturate(var(--jf-backdrop-saturate,1)) sepia(var(--jf-backdrop-sepia,0))";
