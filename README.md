@@ -123,10 +123,10 @@ Active development. Features and APIs may evolve.
 > [!IMPORTANT]
 > This project is developed and maintained solely by the repository owner. While it may look professionally structured, it is **not a company** and operates with **zero revenue**. It is a **100%** non-profit.
 
-#
+---
 > ## Jetflow is for the Community
 > **Jetflow is, and always will be, open-source and free for everyone.**
 
-#
+
 > [!NOTE]
 > Place the Holder.
