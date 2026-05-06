@@ -6,7 +6,7 @@ Jetflow is a browser-based styling engine that combines readable CSS-like syntax
 
 ## Overview
 
-With the release of **v1.0.0**, Jetflow introduces a next-generation engine that runs entirely in the browser. It watches your DOM via `MutationObserver` and generates only the CSS you actually use in real time. It bridges the gap between traditional CSS and utility-first systems, bringing modern styling workflows straight to vanilla HTML.
+With the release of **v1.0.1**, Jetflow introduces a next-generation engine that runs entirely in the browser. It watches your DOM via `MutationObserver` and generates only the CSS you actually use in real time. It bridges the gap between traditional CSS and utility-first systems, bringing modern styling workflows straight to vanilla HTML.
 
 ## Features
 
